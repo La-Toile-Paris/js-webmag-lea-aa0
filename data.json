@@ -1,0 +1,218 @@
+{
+  "title": "Chiens Magazine",
+  "strap": "Compagnons, éducation et bien-être",
+  "logo": "assets/images/logo.svg",
+  "cta": {
+    "text": "Adopter les bonnes pratiques",
+    "label": "S'abonner"
+  },
+  "lead": {
+    "headline": "2025 : santé et éducation positive",
+    "summary": "Approches bienveillantes.",
+    "body": "De l'alimentation aux activités, focus sur le bien-être canin.",
+    "date": "1er Décembre 2025",
+    "topic": "Bien-être",
+    "author": "Léa",
+    "imageHero": "assets/texture/texture1.jpg",
+    "rating": 4.8,
+    "views": 11020,
+    "read": "7 min",
+    "tags": [
+      "éducation",
+      "santé",
+      "jeu"
+    ],
+    "titre": "2025 : santé et éducation positive",
+    "description": "Approches bienveillantes.",
+    "corps": "De l'alimentation aux activités, focus sur le bien-être canin.",
+    "theme": "Bien-être",
+    "auteur": "Léa"
+  },
+  "stories": [
+    {
+      "headline": "Races et besoins",
+      "summary": "Comprendre les profils.",
+      "body": "Chaque race a des besoins spécifiques.",
+      "date": "28 Novembre 2025",
+      "topic": "Races",
+      "author": "Nora",
+      "image": "assets/images/mesimages/quiz.jpg",
+      "rating": 4.6,
+      "views": 9000,
+      "read": "6 min",
+      "titre": "Races et besoins",
+      "description": "Comprendre les profils.",
+      "corps": "Chaque race a des besoins spécifiques.",
+      "theme": "Races",
+      "auteur": "Nora"
+    },
+    {
+      "headline": "Éducation positive",
+      "summary": "Renforcement et jeux.",
+      "body": "Marqueurs et timing.",
+      "date": "25 Novembre 2025",
+      "topic": "Éducation",
+      "author": "Léa",
+      "image": "assets/images/mesimages/education-positive@2x.jpg",
+      "rating": 4.5,
+      "views": 8600,
+      "read": "6 min",
+      "titre": "Éducation positive",
+      "description": "Renforcement et jeux.",
+      "corps": "Marqueurs et timing.",
+      "theme": "Éducation",
+      "auteur": "Léa"
+    },
+    {
+      "headline": "Alimentation",
+      "summary": "Qualité et quantités.",
+      "body": "Adaptation et suivi.",
+      "date": "20 Novembre 2025",
+      "topic": "Santé",
+      "author": "Marc",
+      "image": "assets/images/mesimages/alimentation-canine.jpg",
+      "rating": 4.3,
+      "views": 7300,
+      "read": "5 min",
+      "titre": "Alimentation",
+      "description": "Qualité et quantités.",
+      "corps": "Adaptation et suivi.",
+      "theme": "Santé",
+      "auteur": "Marc"
+    },
+    {
+      "headline": "Activités",
+      "summary": "Sport et jeux.",
+      "body": "Balades et agility.",
+      "date": "16 Novembre 2025",
+      "topic": "Bien-être",
+      "author": "Léa",
+      "image": "assets/images/mesimages/Daniel_Sterl_haute_resolution-08950.jpg",
+      "rating": 4.4,
+      "views": 7800,
+      "read": "5 min",
+      "titre": "Activités",
+      "description": "Sport et jeux.",
+      "corps": "Balades et agility.",
+      "theme": "Bien-être",
+      "auteur": "Léa"
+    },
+    {
+      "headline": "Soins et vétérinaire",
+      "summary": "Prévention et suivi.",
+      "body": "Vaccins et bilans.",
+      "date": "12 Novembre 2025",
+      "topic": "Santé",
+      "author": "Marc",
+      "image": "assets/images/mesimages/prix-hospitalisation-chien.jpg",
+      "rating": 4.2,
+      "views": 6400,
+      "read": "4 min",
+      "titre": "Soins et vétérinaire",
+      "description": "Prévention et suivi.",
+      "corps": "Vaccins et bilans.",
+      "theme": "Santé",
+      "auteur": "Marc"
+    }
+  ],
+  "topics": [
+    {
+      "title": "Éducation",
+      "desc": "Méthodes positives.",
+      "icon": "🐾",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#10B981",
+      "nom": "Éducation",
+      "description": "Méthodes positives."
+    },
+    {
+      "title": "Races",
+      "desc": "Profils et besoins.",
+      "icon": "📚",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#3B82F6",
+      "nom": "Races",
+      "description": "Profils et besoins."
+    },
+    {
+      "title": "Santé",
+      "desc": "Soins et alimentation.",
+      "icon": "🩺",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#F59E0B",
+      "nom": "Santé",
+      "description": "Soins et alimentation."
+    },
+    {
+      "title": "Activités",
+      "desc": "Sport et jeux.",
+      "icon": "🏃",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#8B5CF6",
+      "nom": "Activités",
+      "description": "Sport et jeux."
+    },
+    {
+      "title": "Bien-être",
+      "desc": "Équilibre quotidien.",
+      "icon": "🌿",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#EF4444",
+      "nom": "Bien-être",
+      "description": "Équilibre quotidien."
+    },
+    {
+      "title": "Conseils",
+      "desc": "Pratiques utiles.",
+      "icon": "💡",
+      "image": "assets/texture/texture7.jpg",
+      "color": "#6B7280",
+      "nom": "Conseils",
+      "description": "Pratiques utiles."
+    }
+  ],
+  "contributors": [
+    {
+      "firstName": "Léa",
+      "expertise": "Éducatrice canine",
+      "bio": "Conseils et analyses.",
+      "avatar": "assets/images/mesimages/26175134-nouvelles-journaliste-avatar-vecteur-rond-plat-icone-vectoriel.jpg",
+      "email": "lea@chiens.com",
+      "articles": 21,
+      "followers": 5600,
+      "prenom": "Léa",
+      "nom": "",
+      "typeExperience": "Éducatrice canine",
+      "presentation": "Conseils et analyses.",
+      "image": "assets/texture/texture7.jpg"
+    },
+    {
+      "firstName": "Marc",
+      "expertise": "Vétérinaire",
+      "bio": "Prévention et suivi.",
+      "avatar": "assets/images/mesimages/26175075-nouvelles-journaliste-avatar-vecteur-rond-plat-icone-vectoriel.jpg",
+      "email": "marc@vet.fr",
+      "articles": 18,
+      "followers": 4700,
+      "prenom": "Marc",
+      "nom": "Durand",
+      "typeExperience": "Vétérinaire",
+      "presentation": "Prévention et suivi.",
+      "image": "assets/texture/texture7.jpg"
+    },
+    {
+      "firstName": "Nora",
+      "expertise": "Comportementaliste",
+      "bio": "Approches positives.",
+      "avatar": "assets/images/mesimages/istockphoto-1620993488-612x612.jpg",
+      "email": "nora@comport.fr",
+      "articles": 17,
+      "followers": 4300,
+      "prenom": "Nora",
+      "nom": "Ben",
+      "typeExperience": "Comportementaliste",
+      "presentation": "Approches positives.",
+      "image": "assets/texture/texture7.jpg"
+    }
+  ]
+}
