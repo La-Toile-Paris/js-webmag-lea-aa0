@@ -176,10 +176,10 @@ function getData() {
                 afficheTousLesAuteurs(journal)
 
       // TODO 7: REMPLIR LE BOUTON CALL TO ACTION
-                let footerr = document.querySelector(".footer").innerHTML = `<div class="">
-                      <h5> Rejoignez-nous pour en savoir plus sur le bien être de nos amis les Chiens </h5>
-                      </div>
+                let footer = document.querySelector(".cta-section").innerHTML = `<div class="">
+                      <h4> Rejoignez-nous pour en savoir plus sur le bien être de nos amis les Chiens </h4>
                       <button class="read-btn"> S'ABONNER </button>
+                      </div>
                       `;
                       
               
