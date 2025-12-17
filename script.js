@@ -18,11 +18,13 @@ function getData() {
 
       
       // TODO 2: REMPLIR LA NAVIGATION
-
       let navBarre = document.getElementById('themes-nav');
+      navBarre.innerHTML += `<button class="nav-theme-btn all active" data-topic="all">TOUS</button>`;
       function navContainer(topics) {
-        let boutton = topics.title
-        let button = `<button class="nav-theme-btn"> ${boutton} </button>`
+        let boutton = topics.title;
+        let icons = topics.icon
+        let button = `<button class="nav-theme-btn" data-topic="${boutton}"> ${icons}${boutton} </button>`
+        
 
         navBarre.innerHTML += button;
       }
@@ -31,17 +33,18 @@ function getData() {
         navContainer(element)
       });
       }
-
+      
       afficherNav(journal)
       
-      
+      //navBarre.addEventListener("click", function () {
+      //filtrerArticlesParTheme(topic);
+      //                  });
+      //
       // TODO 3: REMPLIR L'ARTICLE PRINCIPAL
 
       let hero = data.lead;
 
-      //hero.innerHTML = `
-          //<img id= "hero-image" src="${journal.lead.imageHero}" alt="Image principale">
-          //`;
+      
 
           let heroContainer = document.getElementById("article-principal");
           
@@ -52,15 +55,16 @@ function getData() {
             let corps = lead.corps;
             let theme = lead.theme;
             let auteur = lead.auteur;
+            let date = lead.date;
 
             let card = `<img id= "hero-image" src="${journal.
                        lead.imageHero}" alt="Image principale">
                         <div class="hero-info">
+                        <p class="theme-badge">${theme}</p>
                         <h3 id="hero-titre">${titreArcticle}</h3>
                         <p id="hero-description">${description}</p>
                         <p>${corps}</p>
-                        <p>Sujet: ${theme}</p>
-                        <p id="hero-titre">Auteur: ${auteur}</p>
+                        <p id="hero-auteur">Par <strong>${auteur}</strong> • ${date}</p>
                         <button class="read-article-btn">Lire l'Article</button>
                         </div>`
 
@@ -81,18 +85,19 @@ function getData() {
             let topic = stories.topic;
             let author = stories.author;
             let read = stories.read;
+            let rate = stories.rating;
 
             let card = `<div class="article-card">
                         <img src="${image}">
-                        <h3 class="theme-badge">${headline}</h3>
                         <div class="article-content">
-                        <h4>${summary}</h4>
+                        <h6 class="theme-badge">${topic}</h6>
+                        <h4>${headline}</h4>
                         <p>${body}</p>
-                        <p>Sujet: ${topic}</p>
-                        <p>${date}</p>
-                        <p class="article-author">Auteur: ${author}</p>
+                        <p>${summary}</p>
+                        <p class="article-author">Par ${author} • ${date}</p>
+                        <p>${scoreEtoile(rate)}</p>
                         <p>📖 ${read}</p>
-                        <p class="read-btn"> lire </p>
+                        <h6 class="read-btn"> lire l'article </h6>
                         </div>
                         </div>`
 
@@ -157,7 +162,7 @@ function getData() {
                         <img class= "author-image" src="${avatar}">
                         <h3>${prenom} ${nom}</h3>
                         <p>Domaine: ${expertise}</p>
-                        <p>Bio: ${bio}</p>
+                        <p>${bio}</p>
                         <p>${articles} Articles</p>
                         <p>${followers} Abonnés</p>
                         <p>📧 ${email} </p>
@@ -176,13 +181,70 @@ function getData() {
                 afficheTousLesAuteurs(journal)
 
       // TODO 7: REMPLIR LE BOUTON CALL TO ACTION
-                let footer = document.querySelector(".cta-section").innerHTML = `<div class="">
+                
+                let cta = document.querySelector(".cta-section").innerHTML = `<div class="">
                       <h4> Rejoignez-nous pour en savoir plus sur le bien être de nos amis les Chiens </h4>
                       <button class="read-btn"> S'ABONNER </button>
                       </div>
-                      `;
-                      
-              
+                      `; 
+                      let ctaButton = document.querySelector(".cta-section");
+                      ctaButton.addEventListener("click", function () {
+                      alert(`Vous êtes maintenant abonné à ${journal.title} !`);
+                        });
+
+  
+
+  
+function remplacer(stories) {
+  articleContainer.innerHTML = ""; 
+  console.log('hey')
+  stories.forEach(story => {
+    creerCarte(story); 
+  });
+}
+
+let buttonTous = document.querySelector(".all")
+const filterButtons = document.querySelectorAll('#themes-nav button');
+
+buttonTous.addEventListener("click", function(){
+  filteredStories = journal.stories
+  remplacer(filteredStories)
+})
+
+
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const topic = button.dataset.topic;
+
+    filterButtons.forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
+
+    if (topic === "TOUS" || topic === "all") {
+      remplacer(journal.stories);
+    } else {
+      const filteredStories = journal.stories.filter(
+        story => story.topic === topic
+      );
+      remplacer(filteredStories);
+    }
+  });
+});
+
+function scoreEtoile(rating){
+        let i = 0
+        let result =""
+        let nbrEtoiles =  Math.floor(rating);
+        while (i < nbrEtoiles && i < 5){
+          result += "★";
+          i++;
+        }
+        while (i < 5){
+          result += "☆";
+          i++;
+        }
+        result +=(`${rating}`)
+        return (result)
+      }
 
       /// FIN DU CODE
      })

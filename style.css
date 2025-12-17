@@ -2,7 +2,7 @@
 :root {
    /* Colors */
    --color-primary: #2a2a2a;
-   --color-secondary: #0b0b0b;
+   --color-secondary: #262626;
    --color-white: #fff;
    
    /* Backgrounds */
@@ -12,7 +12,7 @@
    /* Text */
    --text-dark: #2a2a2a;
    --text-light: #666;
-   --text-white: #fff;
+   --text-white: #ffffff;
    
    /* Spacing */
    --space-sm: 1rem;
